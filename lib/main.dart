@@ -1,5 +1,5 @@
 
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:todoy/Screens/create_account.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
      
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff24A19C)),
         useMaterial3: true,
       ),
       home: const CreateAccount()
