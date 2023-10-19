@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:todoy/Screens/create_account.dart';
-import 'package:todoy/Screens/email_screen.dart';
+import 'package:todoy/Screens/Choose_theme.dart';
+import 'package:todoy/Screens/create_task.dart';
+
+import 'package:todoy/data/data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff24A19C)),
         useMaterial3: true,
       ),
-      home: const EmailScreen()
+      home: const CreateTask()
     );
   }
 }

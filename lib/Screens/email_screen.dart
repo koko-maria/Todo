@@ -42,7 +42,7 @@ class _EmailScreenState extends State<EmailScreen> {
             const SizedBox(
               height: 18,
             ),
-            Text("Email Address A",
+            Text("Email Address",
                 
                 style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       fontFamily: "SF-Pro-Display",
@@ -64,14 +64,16 @@ class _EmailScreenState extends State<EmailScreen> {
               }, autofillHints: [AutofillHints.email],
             ),
             const Spacer(),
-            Elevated(
-              icons: null,
-              text: "Next",
-              width: 320.0,
-              height: 70.0,
-              backgroundColor: Theme.of(context).colorScheme.primary,
-              textColor: Theme.of(context).colorScheme.background,
-              onPressed: () {},
+            Center(
+              child: Elevated(
+                icons: null,
+                text: "Next",
+                width: 320.0,
+                height: 70.0,
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                textColor: Theme.of(context).colorScheme.background,
+                onPressed: () {},
+              ),
             ),
           ],
         ),
